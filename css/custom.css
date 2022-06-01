@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5,
+p, span, form, label {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #5a5a5a;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.container {
+  height: 100vh;
+  height: fit-content; }
+  .container .title-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container .title {
+    font-weight: 500; }
+  .container .title-secondary {
+    font-weight: 300; }
+  .container .form-block {
+    max-width: 80%; }
+    .container .form-block label {
+      color: #5a5a5a; }
+    .container .form-block input::placeholder {
+      color: #c2c2c2;
+      font-weight: 300; }
+    .container .form-block .error-input {
+      font-size: 0.8rem; }
+  .container .calculations {
+    border: 2px solid rgba(120, 194, 173, 0.25); }
+    .container .calculations p {
+      font-size: 1.25rem; }
+
+/*# sourceMappingURL=custom.css.map */

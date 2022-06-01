@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+$primary:   #78c2ad;
+$secondary: #f3969a;
+$success:   #56cc9d;
+$info:      #6cc3d5;
+$warning:   #ffce67;
+$danger:    #ff7851;
+$light:     #f8f9fa;
+$dark:      #343a40;
+$text-dark: #5a5a5a;
+$text-light: #c2c2c2;
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5,
+p, span, form, label {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $text-dark;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+.container {
+  height: 100vh;
+  height: fit-content;
+
+  .title-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-weight: 500;
+  }
+
+  .title-secondary {
+    font-weight: 300;
+  }
+
+  .form-block {
+    max-width: 80%;
+
+    label {
+      color: $text-dark;
+    }
+
+    input::placeholder {
+      color: $text-light;
+      font-weight: 300;
+    }
+
+    .error-input {
+      font-size: 0.8rem;
+    }
+  }
+
+
+
+  .calculations {
+    border: 2px solid rgba(120, 194, 173, 0.25);
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+}

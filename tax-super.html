@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/custom.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <title>Tax And Super Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="text-center my-5">
+      <a href="./index.html" class="link-light text-decoration-none bg-danger p-3 border rounded-3"><strong>Go to sample onboarding form</strong></a>
+      <a href="./notes.html" class="link-light text-decoration-none bg-info p-3 border rounded-3"><strong>Go to notes on the solutions</strong></a>
+    </div>
+    <div class="title-block my-5">
+      <div class="d-flex align-items-center">
+        <span class="material-icons-outlined me-2">account_balance</span>
+        <h1 class="title d-inline-block">Annual Tax and Superannuation Calculator</h1>
+      </div>
+      <p class="title-secondary mt-4">Please input your annual income</p>
+
+    </div>
+
+    <div class="form-block my-3 mx-auto">
+      <form class="form-calculate-income" onsubmit="onSubmitHandler(event)">
+        <div class="w-100">
+          <label for="income" class="form-label"><strong>Income</strong></label>
+          <input type="text" class="form-control input-income" placeholder="Income" />
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-3 py-2 px-5">
+            Submit
+          </button>
+        </div>
+      </form>
+
+      <div class="calculations mt-5 rounded-2 p-3">
+        <div class="d-flex">
+          <p class="text-dark text-end w-25 me-3">
+            <strong>Annual Tax: </strong>
+          </p>
+          <p class="calculated-tax text-danger"></p>
+        </div>
+        <div class="d-flex">
+          <p class="text-dark text-end w-25 me-3">
+            <strong>Superannuation: </strong>
+          </p>
+          <p class="calculated-super text-danger"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
